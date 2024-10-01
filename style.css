@@ -1,0 +1,21 @@
+body{
+    background-color: #73798F;
+
+}
+header{
+    width: 70em;
+    height: 120px;
+    background-color: #4F576B;
+    border: none;
+    border-radius: 30px;
+    margin: auto;
+}
+h1{
+    display: block;
+    
+    top: 50%;
+    text-align: center;
+    color: whitesmoke;
+    font-style: bold;
+    font-family: Arial;
+}
