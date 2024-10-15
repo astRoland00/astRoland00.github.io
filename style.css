@@ -1,5 +1,5 @@
 body{
-    background-color: #c4c4c4;
+    background-color: #ede8f5;
 
 }
 header{
@@ -17,21 +17,97 @@ h1{
 }
 
 
-
-
 .hozzavalok {
-    background-color: #acacac;
     border-radius: 30px;
-    padding: 15px;
+    font-size: 1em;
 }
 .hozzavalok table{
-    
+    width: 100%;
 }
 
 section {
     margin-top: 20px;
 }
 
-.hozzavalok .card{
+.hozzavalok .card {
+    height: 250px;
+    margin-bottom: 20px;
+    background: #8697c4;
+    border: none;
+}
 
+body { font-family: Helvetica; }
+
+.elkeszites {
+  margin: auto;
+  max-width: 800px;
+}
+
+.elkeszites p {
+  border-top: 2px dashed;
+  border-color: blue !important;
+  margin:0; padding: 30px;
+  counter-increment: section;
+  position: relative;
+}
+
+
+
+.elkeszites p:nth-child(even):before {
+  content: counter(section);
+  right: 100%; 
+  margin-right: -20px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  text-align:center;
+  color: white;
+  font-size: 110%;
+}
+
+.elkeszites p:nth-child(odd):before {
+  content: counter(section);
+  left: 100%; 
+  margin-left: -20px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  text-align:center;
+  color: white;
+  font-size: 110%;
+}
+
+
+
+.elkeszites p:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px; 
+  padding-right: 0;
+}
+
+.elkeszites p:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px; 
+  padding-left: 0;
+}
+
+.elkeszites p:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+.elkeszites p:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
 }
