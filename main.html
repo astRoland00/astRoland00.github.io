@@ -10,8 +10,17 @@
     <title>Főoldal</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <header class="row">
+
+        <div class="dropdown col-2">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+        </div>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="main.html">Főoldal</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -37,19 +46,28 @@
               
             </div>
             
-          </nav>
-        <h1>Főoldal</h1>
+          </nav> -->
+        <div id="fej">
+            <h1>Főoldal</h1>
+        </div>
+        
         
     </header>
     <main>
-        <section>
-            <article>
-                <img src="/img/kepviselofank.jpg" alt="Képviselőfánk" title="Képviselőfánk">
-            </article>
-            <article>
+        <article class="row">
+            <div class="col-5">
+                <img src="img/kepviselofank.jpg" alt="Képviselőfánk" title="Képviselőfánk" class="sec-img">
+            </div>
+            <div class="col-5">
+                Use any element to open the dropdown menu, e.g. a <button>, <a> or <p> element.
 
-            </article>
-        </section>
+                    Use a container element (like <div>) to create the dropdown menu and add the dropdown links inside it.
+                    
+                    Wrap a <div> element around the button and the <div> to position the dropdown menu correctly with CSS.
+                    
+                    
+            </div>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

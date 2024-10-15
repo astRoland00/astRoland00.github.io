@@ -6,6 +6,12 @@ header{
     height: 80px;
     background-color: #4F576B;
     border: none;
+    position: sticky;
+}
+#fej{
+
+    display: block;
+    margin: auto;
 }
 
 h1{
@@ -16,6 +22,49 @@ h1{
 
 }
 
+.dropbtn {
+    background-color: #4F576B;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    display: block;
+    border-radius: 20px;
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #4F576B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #616161;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
 
 
 
@@ -34,4 +83,14 @@ section {
 
 .hozzavalok .card{
 
+}
+
+.sec-img{
+    width: 10em;
+}
+article{
+    border-color: none;
+    border-radius: 20px;
+    width: 80em;
+    background-color: #adbbda;
 }
