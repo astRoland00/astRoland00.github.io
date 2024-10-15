@@ -38,7 +38,7 @@ h1{
   }
   
   /* The container <div> - needed to position the dropdown content */
-.dropdown {
+nav {
     position: relative;
     display: inline-block;
     background-color: #8697c4;
@@ -77,7 +77,7 @@ font-variant: small-caps;
 .dropdown-content a:hover {background-color: #adbbda;}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block; }
+nav:hover .dropdown-content {display: block; }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
