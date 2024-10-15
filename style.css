@@ -21,4 +21,13 @@ h1{
 
 .hozzavalok {
     background-color: #acacac;
+    border-radius: 30px;
+    padding: 15px;
+}
+.hozzavalok table{
+    
+}
+
+section {
+    margin-top: 20px;
 }
