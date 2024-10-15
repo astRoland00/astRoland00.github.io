@@ -7,7 +7,6 @@ header{
     border: none;
 }
 #fej{
-
     display: block;
     margin: auto;
 }
@@ -57,28 +56,28 @@ h1{
 
 }
   
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: white;
-    font-size: 16px;
-    padding: 12px 16px;
-    text-decoration: none;
-    border-radius: 10px;
-    display: block;
-    width: 200px;
-    font-style: bold;
-    font-family: Arial;
-    margin: 10px 10px;
-    font-variant: small-caps;
-  }
+/* Links inside the dropdown */
+.dropdown-content a {
+color: white;
+font-size: 16px;
+padding: 12px 16px;
+text-decoration: none;
+border-radius: 10px;
+display: block;
+width: 200px;
+font-style: bold;
+font-family: Arial;
+margin: 10px 10px;
+font-variant: small-caps;
+}
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #adbbda;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block; }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #adbbda;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
 
 
 
@@ -189,13 +188,11 @@ body { font-family: Helvetica; }
     margin: 50px 50px ;
 }
 .item{
-
     border-color: none;
     border-radius: 40px;
     width: 40rem;
     background-color: #adbbda;
     display: block;
-    margin: 40px 40px ;
     padding: 55px 50px;
     
 }
