@@ -1,5 +1,5 @@
 body{
-    background-color: #73798F;
+    background-color: #c4c4c4;
 
 }
 header{
@@ -55,3 +55,9 @@ h1{
 .dropdown-content a:hover {background-color: #aeabab;}
 
 .dropdown:hover .dropdown-content {display: block;}
+
+
+
+.hozzavalok {
+    background-color: #acacac;
+}
