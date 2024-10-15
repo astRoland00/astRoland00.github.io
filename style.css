@@ -1,5 +1,6 @@
 body{
-    background-color: #ede8f5;
+    background: rgb(237,232,245);
+    background: linear-gradient(180deg, rgba(237,232,245,1) 0%, rgba(134,151,196,1) 100%);
 
 }
 header{
