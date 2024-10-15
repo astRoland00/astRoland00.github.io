@@ -77,7 +77,7 @@ h1{
 }
 
 section {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .hozzavalok .card {
@@ -89,14 +89,17 @@ section {
 
 body { font-family: Helvetica; }
 
-.elkeszites {
+.elkeszites h2{
+    text-align: center;
+}
+.elkeszites div {
   margin: auto;
   max-width: 800px;
 }
 
 .elkeszites p {
   border-top: 2px dashed;
-  border-color: blue !important;
+  border-color: #3d52a0 !important;
   margin:0; padding: 30px;
   counter-increment: section;
   position: relative;
@@ -113,7 +116,7 @@ body { font-family: Helvetica; }
   padding: 3px;
   height: 30px;
   width: 30px;
-  background-color: blue;
+  background-color: #3d52a0;
   text-align:center;
   color: white;
   font-size: 110%;
@@ -128,7 +131,7 @@ body { font-family: Helvetica; }
   padding: 3px;
   height: 30px;
   width: 30px;
-  background-color: blue;
+  background-color: #3d52a0;
   text-align:center;
   color: white;
   font-size: 110%;
@@ -142,6 +145,7 @@ body { font-family: Helvetica; }
   border-bottom-left-radius: 30px;
   margin-right: 30px; 
   padding-right: 0;
+  text-align: left;
 }
 
 .elkeszites p:nth-child(odd) {
@@ -150,6 +154,7 @@ body { font-family: Helvetica; }
   border-bottom-right-radius: 30px;
   margin-left: 30px; 
   padding-left: 0;
+  text-align: right;
 }
 
 .elkeszites p:first-child {
