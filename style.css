@@ -1,14 +1,10 @@
 body{
     background-color: #ede8f5;
-
 }
 header{
     height: 60px;
     background-color: #8697c4;
-
     border: none;
-
-    box-shadow: #3d52a0 0px 5px 5px 0px;
 }
 #fej{
 
@@ -58,7 +54,6 @@ h1{
     min-width: 160px;
     z-index: 1;
     height: 200px;
-    box-shadow: #3d52a0 5px 5px 5px 0px;
 
 }
   
