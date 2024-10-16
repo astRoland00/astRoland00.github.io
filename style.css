@@ -192,11 +192,14 @@ section {
 }
 
 .kajak {
+    cursor: pointer;
     background: rgba(237,232,245,.7);
     border: none;
     border-radius: 20px;
     height: 300px;
     margin-bottom: 50px;
+
+    transition: all .3s ease-in-out;
 }
 .kajak .card-img-left {
     border-top-left-radius: inherit;
@@ -205,4 +208,10 @@ section {
 .kajak .card-img-right {
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
+}
+
+.kajak:hover {
+    transform: scale(1.02,1.02);
+
+    transition: all .3s ease-in-out;
 }
