@@ -14,17 +14,14 @@ header{
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0px 5px 5px var(--bg-color2);
+    box-shadow: 0px 3px 10px var(--bg-color2);
 }
 main {
     background: var(--bg-color1);
     background: linear-gradient(0deg, var(--bg-color1) 0%, var(--bg-color2) 100%);
     padding: 30px;
 }
-#fej{
-    display: block;
-    margin: auto;
-}
+
 
 h1{
     text-align: center;
@@ -32,9 +29,6 @@ h1{
     font-style: bold;
     font-family: Arial;
     font-variant: small-caps;
-    border-radius: 10px;
-    width: 10em;
-    padding-left: 45rem;
 }
 
 .dropbtn {
@@ -48,8 +42,9 @@ h1{
   
   /* The container <div> - needed to position the dropdown content */
 nav {
-    display: inline-block;
+    display: block;
     border-radius: 20px;
+    float: left;
 }
   
   /* Dropdown Content (Hidden by Default) */
@@ -197,7 +192,7 @@ section {
 }
 
 .kajak {
-    background: var(--bg-color1);
+    background: rgba(237,232,245,.7);
     border: none;
     border-radius: 20px;
     height: 300px;
