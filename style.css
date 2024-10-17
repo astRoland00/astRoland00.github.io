@@ -67,7 +67,7 @@ nav {
     position: absolute;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    box-shadow: #7091e6 2px 2px 200px;
+    box-shadow: none;
     background-color: var(--color1);
     min-width: 160px;
     z-index: 1;
@@ -97,6 +97,7 @@ nav {
 /* Show the dropdown menu on hover */
 nav:hover .dropdown-content {
     margin-left: -12px;
+    box-shadow: #7091e6 2px 2px 200px;
     transition: all .3s ease-out;
 }
 
