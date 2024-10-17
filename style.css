@@ -123,10 +123,13 @@ nav:hover .dropdown-content {
 }
 .hozzavalok table{
     width: 100%;
+    table-layout: fixed;
 }
 .hozzavalok table td:nth-of-type(2) {
     text-align: right;
+    border-left: 2px solid var(--color2);
 }
+
 
 section {
     margin-bottom: 50px;
