@@ -219,3 +219,16 @@ section {
 
     transition: all .3s ease-in-out;
 }
+
+.kajakepek {
+    max-width: 100%;
+}
+.kajakepek img {
+    max-width: 100%;
+}
+
+.ido_adagok {
+    font-size: 15px;
+    position: absolute;
+    bottom: 20px;
+}
