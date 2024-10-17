@@ -224,8 +224,12 @@ section {
     border-radius: 20px;
     height: 300px;
     margin-bottom: 50px;
+    font-weight: 500;
 
     transition: all .3s ease-in-out;
+}
+.kajak .card-title {
+    font-weight: 700;
 }
 .kajak:nth-of-type(odd) .custom-card-img {
     border-top-left-radius: inherit;
@@ -246,15 +250,21 @@ section {
     transform: scale(1.02,1.02) rotate(-1deg);
 }
 
-.kajakepek {
-    max-width: 100%;
-}
-.kajakepek img {
-    max-width: 100%;
+@media only screen and (max-width: 1000px) {
+    .kajak .custom-card-img {
+        display: none;
+    }
+    .kajak {
+        background: var(--background);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: var(--color);
+    }
 }
 
 .ido_adagok {
     font-size: 15px;
+    font-weight: initial;
 }
 .kajak .ido_adagok {
     position: absolute;
