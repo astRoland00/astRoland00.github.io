@@ -259,7 +259,7 @@ section {
     transform: scale(1.02,1.02) rotate(-1deg);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 991px) {
     .kajak .custom-card-img {
         display: none;
     }
