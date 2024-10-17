@@ -7,6 +7,7 @@ body{
 
     font-family: noto-sans, system-ui, Segoe UI ,Roboto, Helvetica, arial, sans-serif;
     color: #474747;
+    background: var(--bg-color1);
 }
 header{
     height: 60px;
@@ -68,6 +69,7 @@ nav {
     min-width: 160px;
     z-index: 1;
     height: 200px;
+    margin-left: -12px;
 }
   
 /* Links inside the dropdown */
@@ -272,4 +274,16 @@ section {
 }
 .kajak .ido_adagok:nth-of-type(even) {
     text-align: right;
+}
+
+
+footer {
+    background-color: #272727;
+    margin-bottom: -20px;
+    height: 50px;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: whitesmoke;
+    text-align: center;
 }
