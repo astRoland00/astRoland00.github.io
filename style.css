@@ -5,7 +5,8 @@ body{
     --color2: #7091e6;
     --color3: #3d52a0;
 
-    font-family: Helvetica;
+    font-family: noto-sans, system-ui, Segoe UI ,Roboto, Helvetica, arial, sans-serif;
+    color: #474747;
 }
 header{
     height: 60px;
@@ -91,6 +92,9 @@ nav:hover .dropdown-content {display: block; }
 }
 .hozzavalok table{
     width: 100%;
+}
+.hozzavalok table td:nth-of-type(2) {
+    text-align: right;
 }
 
 section {
