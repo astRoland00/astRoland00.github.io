@@ -123,10 +123,13 @@ nav:hover .dropdown-content {
 }
 .hozzavalok table{
     width: 100%;
+    table-layout: fixed;
 }
 .hozzavalok table td:nth-of-type(2) {
     text-align: right;
+    border-left: 2px solid var(--color2);
 }
+
 
 section {
     margin-bottom: 50px;
@@ -287,10 +290,22 @@ h2{
 footer {
     background-color: #272727;
     margin-bottom: -20px;
-    height: 50px;
+    min-height: 50px;
     padding: 15px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     color: whitesmoke;
     text-align: center;
+}
+footer a{
+    color: inherit;
+}
+
+.impresszum_adatok {
+    color: #4b4b4b;
+    max-width: fit-content;
+    line-height: 10px;
+}
+.impresszum_adatok span {
+    color: var(--color2);
 }
