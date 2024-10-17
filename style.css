@@ -22,6 +22,15 @@ main {
     background: linear-gradient(0deg, var(--bg-color1) 0%, var(--bg-color2) 100%);
     padding: 30px;
 }
+.noselect { 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
+
 
 
 h1{
@@ -84,6 +93,18 @@ nav:hover .dropdown-content {display: block; }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
+.recept_cimresz {
+    text-align: center;
+}
+.recept_cimresz h2 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -.4px;
+    line-height: 48px;
+}
+.recept_cimresz img {
+    border-radius: 10px;
+}
 
 
 .hozzavalok {
@@ -120,7 +141,8 @@ section {
 .elkeszites p {
   border-top: 2px dashed;
   border-color: var(--color3) !important;
-  margin:0; padding: 30px;
+  margin:0;
+  padding: 30px;
   counter-increment: section;
   position: relative;
 }
@@ -128,33 +150,33 @@ section {
 
 
 .elkeszites p:nth-child(even):before {
-  content: counter(section);
-  right: 100%; 
-  margin-right: -20px;
-  position: absolute;
-  border-radius: 50%;
-  padding: 3px;
-  height: 30px;
-  width: 30px;
-  background-color: var(--color3);
-  text-align:center;
-  color: white;
-  font-size: 110%;
+    content: counter(section);
+    right: 100%; 
+    margin-right: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    background-color: var(--color3);
+    text-align:center;
+    color: white;
+    font-size: 110%;
 }
 
 .elkeszites p:nth-child(odd):before {
-  content: counter(section);
-  left: 100%; 
-  margin-left: -20px;
-  position: absolute;
-  border-radius: 50%;
-  padding: 3px;
-  height: 30px;
-  width: 30px;
-  background-color: var(--color3);
-  text-align:center;
-  color: white;
-  font-size: 110%;
+    content: counter(section);
+    left: 100%; 
+    margin-left: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    background-color: var(--color3);
+    text-align:center;
+    color: white;
+    font-size: 110%;
 }
 
 
@@ -233,19 +255,11 @@ section {
 
 .ido_adagok {
     font-size: 15px;
+}
+.kajak .ido_adagok {
     position: absolute;
     bottom: 20px;
 }
-.ido_adagok:nth-of-type(even) {
+.kajak .ido_adagok:nth-of-type(even) {
     text-align: right;
 }
-
-
-.noselect { 
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
- }
