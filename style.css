@@ -41,12 +41,15 @@ h1{
     font-family: Arial;
     font-variant: small-caps;
 }
+.header_cim {
+    display: block;
+    margin: auto;
+}
 
 .dropbtn {
-    background: rgb(0,0,0,0);
+    background: transparent;
     color: white;
     padding: 16px;
-    font-size: 16px;
     border: none;
     border-radius: 10px;
   }
@@ -60,7 +63,7 @@ nav {
   
   /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -69,7 +72,8 @@ nav {
     min-width: 160px;
     z-index: 1;
     height: 200px;
-    margin-left: -12px;
+    margin-left: -240px;
+    transition: all .3s ease-out;
 }
   
 /* Links inside the dropdown */
@@ -91,7 +95,10 @@ nav {
 .dropdown-content a:hover {background-color: #adbbda;}
 
 /* Show the dropdown menu on hover */
-nav:hover .dropdown-content {display: block; }
+nav:hover .dropdown-content {
+    margin-left: -12px;
+    transition: all .3s ease-out;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
