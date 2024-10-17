@@ -71,7 +71,7 @@ nav {
     background-color: var(--color1);
     min-width: 160px;
     z-index: 1;
-    height: 200px;
+    height: 250px;
     margin-left: -240px;
     transition: all .3s ease-out;
 }
