@@ -62,7 +62,7 @@ nav {
 }
   
   /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+#dropdown-content {
     display: block;
     position: absolute;
     border-bottom-right-radius: 20px;
@@ -77,7 +77,7 @@ nav {
 }
   
 /* Links inside the dropdown */
-.dropdown-content a {
+#dropdown-content a {
     color: white;
     font-size: 16px;
     padding: 12px 16px;
@@ -92,10 +92,10 @@ nav {
 }
   
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #adbbda;}
+#dropdown-content a:hover {background-color: #adbbda;}
 
 /* Show the dropdown menu on hover */
-nav:hover .dropdown-content {
+nav:hover #dropdown-content {
     margin-left: -12px;
     box-shadow: #7091e6 2px 2px 200px;
     transition: all .3s ease-out;
