@@ -1,6 +1,10 @@
 body{
     --bg-color1: rgba(237,232,245,1);
     --bg-color2: #b9c6e0;
+
+    --bg-color1-alpha: rgba(237,232,245,.7);
+    --bg-color1-alpha2: rgba(237,232,245,.3);
+    
     --color1: #8697c4;
     --color2: #7091e6;
     --color3: #3d52a0;
@@ -40,10 +44,6 @@ h1{
     font-style: bold;
     font-family: Arial;
     font-variant: small-caps;
-}
-.header_cim {
-    display: block;
-    margin: auto;
 }
 
 .dropbtn {
@@ -91,7 +91,7 @@ nav {
 }
   
 /* Change color of dropdown links on hover */
-#dropdown-content a:hover {background-color: #adbbda;}
+#dropdown-content a:hover {background-color: rgb(255,255,255,.1);}
 
 /* Show the dropdown menu on hover */
 
@@ -142,7 +142,8 @@ section {
 }
 
 .hozzavalok .card {
-    background: rgba(237,232,245,.3);
+    background: var(--bg-color1-alpha2);
+    color: inherit;
 }
 .hozzavalok .card-body{
     padding: 15px;
@@ -240,7 +241,7 @@ h2{
 
 .kajak {
     cursor: pointer;
-    background: rgba(237,232,245,.7);
+    background: var(--bg-color1-alpha);
     border: none;
     border-radius: 20px;
     height: 300px;
@@ -248,6 +249,7 @@ h2{
     font-weight: 500;
 
     transition: all .3s ease-in-out;
+    color: inherit;
 }
 .kajak .card-title {
     font-weight: 700;
@@ -314,4 +316,81 @@ footer a{
 }
 .impresszum_adatok span {
     color: var(--color2);
+}
+
+
+#themeswitch {
+    display: block;
+    font-size: 1em;
+    position: absolute;
+    float: right;
+    top: 20px;
+    right: 15px;
+  }
+  
+#themeswitch {
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0.75em;
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
+    color: #fdea7b;
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+    padding: 0.15em;
+    width: 3em;
+    height: 1.5em;
+    transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+  
+#themeswitch:before, #themeswitch:after {
+    content: "";
+    display: block;
+}
+  
+#themeswitch:before {
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    z-index: 1;
+}
+  
+#themeswitch:after {
+    background: linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+          repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+          radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #d8d8d8;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%);
+    transform-origin: 25% 50%;
+    width: 1.2em;
+    height: 1em;
+    box-sizing: border-box;
+}
+  /* Checked */
+#themeswitch:checked {
+    background-color: rgba(0,0,0,0.45);
+    box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+}
+  
+#themeswitch:checked:before {
+    background-color: currentColor;
+    transform: translateX(125%)
+}
+  
+#themeswitch:checked:after {
+    border-left-color: currentColor;
+    transform: translateX(-2.5%) rotateY(180deg);
+}
+  /* Other States */
+#themeswitch:focus {
+      /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
+    outline: 0;
 }
