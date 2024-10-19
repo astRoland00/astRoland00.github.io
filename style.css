@@ -72,7 +72,6 @@ nav {
     min-width: 160px;
     z-index: 1;
     height: 250px;
-    margin-left: -240px;
     transition: all .3s ease-out;
 }
   
@@ -95,7 +94,13 @@ nav {
 #dropdown-content a:hover {background-color: #adbbda;}
 
 /* Show the dropdown menu on hover */
-nav:hover #dropdown-content {
+
+.dropdown-content-inactive {
+    margin-left: -240px;
+    transition: all .3s ease-out;
+}
+
+.dropdown-content-active {
     margin-left: -12px;
     box-shadow: #7091e6 2px 2px 200px;
     transition: all .3s ease-out;
