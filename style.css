@@ -54,14 +54,12 @@ h1{
     border-radius: 10px;
   }
   
-  /* The container <div> - needed to position the dropdown content */
 nav {
     display: block;
     border-radius: 20px;
     float: left;
 }
   
-  /* Dropdown Content (Hidden by Default) */
 #dropdown-content {
     display: block;
     position: absolute;
@@ -75,7 +73,6 @@ nav {
     transition: all .3s ease-out;
 }
   
-/* Links inside the dropdown */
 #dropdown-content a {
     color: white;
     font-size: 16px;
@@ -90,10 +87,8 @@ nav {
     font-variant: small-caps;
 }
   
-/* Change color of dropdown links on hover */
 #dropdown-content a:hover {background-color: rgb(255,255,255,.1);}
 
-/* Show the dropdown menu on hover */
 
 .dropdown-content-inactive {
     margin-left: -240px;
@@ -106,7 +101,6 @@ nav {
     transition: all .3s ease-out;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 
 .recept_cimresz {
     text-align: center;
@@ -385,7 +379,6 @@ footer a{
     height: 1em;
     box-sizing: border-box;
 }
-  /* Checked */
 #themeswitch:checked {
     background-color: rgba(0,0,0,0.45);
     box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
@@ -400,8 +393,7 @@ footer a{
     border-left-color: currentColor;
     transform: translateX(-2.5%) rotateY(180deg);
 }
-  /* Other States */
 #themeswitch:focus {
-      /* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
     outline: 0;
 }
+
