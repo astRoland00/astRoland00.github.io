@@ -118,9 +118,11 @@ nav {
     letter-spacing: -.4px;
     line-height: 48px;
 }
-.recept_cimresz img {
-    border-radius: 10px;
+.kajakep {
+    border-radius: 15px;
 }
+
+
 
 
 .hozzavalok {
@@ -144,9 +146,15 @@ section {
 .hozzavalok .card {
     background: var(--bg-color1-alpha2);
     color: inherit;
+    border: none;
+    border-radius: 15px;
 }
 .hozzavalok .card-body{
     padding: 15px;
+}
+.hozzavalok .card-header {
+    border-bottom: none;
+    background: transparent;
 }
 
 

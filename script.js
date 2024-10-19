@@ -1,4 +1,3 @@
-// WEBOLDAL
 function toggleMenu() {
     let element = document.getElementById('dropdown-content');
     if (element.classList.contains("dropdown-content-active")) {
@@ -10,6 +9,7 @@ function toggleMenu() {
         element.classList.add("dropdown-content-active");
     }
 }
+
 
 function darkSwitch(_switch = true) {
     let body = document.getElementsByTagName("body")[0]
@@ -36,16 +36,12 @@ function darkSwitch(_switch = true) {
         body.style.setProperty("--color1", "#3b3950")
         body.style.setProperty("--color2", "#7c70e6")
         body.style.setProperty("--color3", "#934fca")
-        body.style.setProperty("--bg-color1-alpha", "#394150c0")
-        body.style.setProperty("--bg-color1-alpha2", "#3941504b")
+        body.style.setProperty("--bg-color1-alpha", "#394150c6")
+        body.style.setProperty("--bg-color1-alpha2", "#3941507d")
     }
 }
 
 
-if (localStorage.getItem("darkmode") == null) {
-    localStorage.setItem("darkmode", "1")
-}
-darkSwitch(false)
-let darkmode = (localStorage.getItem("darkmode") == "1")
-document.getElementById("themeswitch").checked = !darkmode
 
+darkSwitch(false)
+document.getElementById("themeswitch").checked = !(localStorage.getItem("darkmode") == "1")
